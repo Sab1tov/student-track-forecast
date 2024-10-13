@@ -15,7 +15,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
 			className={cn(
 				className,
 				inter.className,
-				'h-36 flex justify-center items-center font-semibold '
+				'h-36 flex justify-center items-center font-semibold border-[#212153] border-[1px] border-x-0 border-b-0'
 			)}
 		>
 			<div className='flex flex-col justify-center items-center gap-7'>

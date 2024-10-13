@@ -5,29 +5,27 @@ import {
 	Container,
 	Footer,
 	Form,
-	Input,
-	NavBar,
-	Title,
-} from '@/components/index'
-import {
 	FormControl,
 	FormField,
 	FormItem,
 	FormLabel,
 	FormMessage,
-} from '@/components/ui/form'
-import {
+	Input,
+	NavBar,
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
-} from '@/components/ui/select'
+	SuccessModal,
+	Title,
+} from '@/components/index'
 import { cn } from '@/lib/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { SelectValue } from '@radix-ui/react-select'
 import { LockKeyhole, Mail } from 'lucide-react'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import * as z from 'zod'
 
@@ -58,7 +56,11 @@ export default function SignUp() {
 			passwordConfirm: '',
 		},
 	})
-	const handleSubmit = () => {}
+	const handleSubmit = (data: z.infer<typeof formSchema>) => {
+		console.log('Form data', data)
+		setShowModal(true)
+	}
+	const [showModal, setShowModal] = useState(false)
 	return (
 		<>
 			<NavBar />
@@ -196,7 +198,7 @@ export default function SignUp() {
 									className='w-[350px] bg-[#212153] text-white rounded-[9px] text-base font-bold
 									hover:bg-white hover:text-[#212153] hover:border-2 hover:border-[#212153] hover:shadow-lg'
 								>
-									<Link href='/login'>Registration</Link>
+									Registration
 								</Button>
 							</form>
 						</Form>
@@ -215,6 +217,7 @@ export default function SignUp() {
 				</div>
 			</Container>
 			<Footer />
+			<SuccessModal isVisible={showModal} />
 		</>
 	)
 }

@@ -10,9 +10,12 @@ interface Props {
 export const NavBar: React.FC<Props> = ({ className }) => {
 	return (
 		<div
-			className={cn('w-full sticky top-0 bg-white py-5 px-12 z-10', className)}
+			className={cn(
+				'w-full sticky top-0 bg-white py-5 px-12 z-10 border-[#212153] border-[1px] border-x-0 border-t-0',
+				className
+			)}
 		>
-			<Container className='flex items-center justify-between'>
+			<Container className='flex items-center justify-between '>
 				<div className='w-[40px] h-[40px] bg-[#212153]' />
 				<div className='flex gap-3'>
 					<Link href='/'>
