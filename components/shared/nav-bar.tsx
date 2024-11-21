@@ -26,24 +26,30 @@ export const NavBar: React.FC<Props> = ({ className }) => {
 							Home
 						</Button>
 					</Link>
-					<Button
-						size={'lg'}
-						className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
-					>
-						<Link href='/'>About</Link>
-					</Button>
-					<Button
-						size={'lg'}
-						className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
-					>
-						<Link href='/'>Career Exploration</Link>
-					</Button>
-					<Button
-						size={'lg'}
-						className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
-					>
-						<Link href='/'>Prediction Tool</Link>
-					</Button>
+					<Link href='about/'>
+						<Button
+							size={'lg'}
+							className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
+						>
+							About
+						</Button>
+					</Link>
+					<Link href='/'>
+						<Button
+							size={'lg'}
+							className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
+						>
+							Career Exploration
+						</Button>
+					</Link>
+					<Link href='/'>
+						<Button
+							size={'lg'}
+							className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
+						>
+							Prediction Tool
+						</Button>
+					</Link>
 					<Link href='login/'>
 						<Button
 							size={'lg'}

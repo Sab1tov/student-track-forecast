@@ -75,9 +75,21 @@ export default function StudentProfile() {
 						<p className='text-center text-[32px] font-bold text-[#212153]'>
 							Insert from SDU University Portal
 						</p>
-						<button className='w-[130px] h-[40px] bg-[#212153] text-white py-2 px-4 rounded-[5px]'>
-							Sign In
-						</button>
+						<div className='flex gap-5'>
+							<button
+								className='py-2 w-[130px] bg-[#212153] text-white rounded-[9px] text-base font-bold
+									hover:bg-white hover:text-[#212153] hover:outline hover:outline-[#212153] hover:shadow-lg'
+							>
+								Sign In
+							</button>
+
+							<button
+								className='py-2 w-[130px] bg-[#212153] text-white rounded-[9px] text-base font-bold
+									hover:bg-white hover:text-[#212153] hover:outline hover:outline-[#212153] hover:shadow-lg'
+							>
+								Upload
+							</button>
+						</div>
 					</div>
 				</div>
 			</Container>
