@@ -94,7 +94,7 @@ export const AboutSection: React.FC<Props> = ({ className }) => {
 						Join Us on the Journey
 					</h1>
 					<p className='text-white text-[16px]'>
-						Whether you're a student looking for guidance or a teacher wanting
+						Whether you are a student looking for guidance or a teacher wanting
 						to support your students in new ways, Student Track App is here to
 						help you every step of the way. Let’s work together to unlock new
 						opportunities and create a future filled with success.
