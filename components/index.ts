@@ -7,6 +7,7 @@ export { HeroSection } from './shared/sections/hero-section'
 export { HowItWorks } from './shared/sections/how-it-works'
 export { KeyFeaturesSection } from './shared/sections/key-features-section'
 export { Title } from './shared/title'
+export { TopBar } from './shared/top-bar'
 export { Button } from './ui/button'
 export {
 	Card,

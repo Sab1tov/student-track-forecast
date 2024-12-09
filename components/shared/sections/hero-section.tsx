@@ -54,7 +54,7 @@ export const HeroSection: React.FC<Props> = ({ className }) => {
 						size={'lg'}
 						className='bg-[#212153] border-2 hover:bg-white hover:text-[#212153] text-white rounded-[5px] text-sm font-semibold shadow-none'
 					>
-						<Link href='sign-up/'>Learn More</Link>
+						<Link href='about/'>Learn More</Link>
 					</Button>
 				</div>
 			</div>
