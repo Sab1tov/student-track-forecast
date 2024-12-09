@@ -42,7 +42,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
 							Career Exploration
 						</Button>
 					</Link>
-					<Link href='/'>
+					<Link href='/career-prediction'>
 						<Button
 							size={'lg'}
 							className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'
