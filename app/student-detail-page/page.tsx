@@ -23,7 +23,7 @@ export default function StudentDetailPage() {
   };
   return (
     <>
-      <div className="w-screen h-screen bg-[#F5F5F5]">
+      <div className="w-full h-full bg-[#F5F5F5]">
         <NavBar />
         <Container className="w-screen h-full flex  gap-10 bg-[#F5F5F5] flex-col">
           <div className="w-full flex sticky top-0 py-5 justify-center">
