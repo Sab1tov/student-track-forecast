@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
 import { Container } from './container'
-
+import Image from 'next/image'
 interface Props {
 	className?: string
 }
@@ -16,7 +16,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
 			)}
 		>
 			<Container className='flex items-center justify-between '>
-				<div className='w-[40px] h-[40px] bg-[#212153]' />
+				<Image src={'Vector.svg'} width={40} height={40} alt='Logo'/>
 				<div className='flex gap-3'>
 					<Link href='/'>
 						<Button
@@ -34,7 +34,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
 							About
 						</Button>
 					</Link>
-					<Link href='/'>
+					<Link href='student-detail-page/'>
 						<Button
 							size={'lg'}
 							className='bg-white text-[#212153] hover:bg-[#212153] hover:text-white rounded-[5px] text-sm font-semibold shadow-none'

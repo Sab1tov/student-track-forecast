@@ -17,7 +17,7 @@ export const HeroSection: React.FC<Props> = ({ className }) => {
 		<Container
 			className={cn(
 				className,
-				'px-24 py-20 flex gap-48 h-[600px] w-full bg-[#212153]'
+				'px-24 py-20 flex gap-48  w-full bg-[#212153]'
 			)}
 		>
 			<div>

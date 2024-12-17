@@ -40,7 +40,7 @@ export const MainInfo: React.FC<Props> = ({
 		<CardContent
 			className={cn(inter.className, 'py-5 gap-5  border-[#D9D9D9] border-0')}
 		>
-			<CardTitle className='text-[#212153] text-[24px]'>
+			<CardTitle className='text-[#212153] text-[24px] mb-5'>
 				Main Information
 			</CardTitle>
 			<ul className=' flex gap-5'>
